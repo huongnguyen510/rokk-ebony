@@ -70,7 +70,6 @@ i.fas.fa-bars {
     height: 60px;
 }
 .header__mid {
-    text-align: center;
     height: 100%;
 }
 .header__mid a {
@@ -94,14 +93,14 @@ a.btn.bg-black:hover {
     height: 100%;
 }
 
-.box-img-s {    
+.box-img-s, .box-img-b {    
     overflow: hidden;
     line-height: 0;
 }
-.box-img-s img {
+.box-img-s img, .box-img-b img {
     transition: all .3s ease;
 }
-.box-img-s:hover img {
+.box-img-s:hover img, .box-img-b:hover img {
     transform: scale(1.5);
 }
 
@@ -125,7 +124,12 @@ a.btn.bg-blue:hover {
     background-color: white;
     color: #A8B7CA;
 }
-
+a.link {
+    font-size: 12px;
+}
+.link:click {
+    display: none;
+}
 
 /*Footer*/
 ul.social-group {
@@ -183,6 +187,9 @@ ul.social-group li a:hover {
     .header__right {
         display: none;
     }
+    .header__mid {
+        text-align: right;
+    }
     .intro, .block-text {
         padding: 40px 20px;
     }
@@ -197,6 +204,9 @@ ul.social-group li a:hover {
         letter-spacing: 2px;
         font-size: 15px;
     }
+    .link, .btn-view-price {
+        display: none;
+    }
     .btn-fixed {
         border-top: 2px solid white;
         padding: 20px;
@@ -209,7 +219,7 @@ ul.social-group li a:hover {
     .btn-fixed:hover {
         background-color: white;
     }
-    .btn-fixed a:hover {
+    .btn-fixed:hover a {
         color: black;
         font-weight: 600;
     }
@@ -265,7 +275,9 @@ ul.social-group li a:hover {
     .containerSmall  {
         width: 55%;
     }
-
+    .header__mid {
+        text-align: center;
+    }
     i.fas.fa-bars:after {
         content: "  MENU";
     }
@@ -322,4 +334,47 @@ ul.social-group li a:hover {
         font-size: 1rem;
     }
 
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.btn-view-price {
+    position: fixed;
+    transform: rotate(-90deg);
+    z-index: 1;
+    right: -104px;
+    top: 350px;
 }

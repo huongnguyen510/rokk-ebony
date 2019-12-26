@@ -15,12 +15,20 @@
 </head>
 <body>
 	<div class="wrap">
+
+		<div id="mySidenav" class="sidenav">
+		  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  	<a href="#">About</a>
+		  	<a href="#">Services</a>
+		  	<a href="#">Clients</a>
+		  	<a href="#">Contact</a>
+		</div>
 		<!-- HEADER -->
 		<header class="header">
 			<div class="containerBig">
 				<div class="header__wrap">
 					<div class="header__left">
-						<a id="menutoggle">
+						<a id="menutoggle" onclick="openNav()">
 							<i class="fas fa-bars"></i>
 						</a>
 					</div>
@@ -35,6 +43,10 @@
 				</div>
 			</div>
 		</header>
+		<!-- BTN-VIEW-PRICE-LIST -->
+			<div class="btn btn-view-price">
+				<a class="btn bg-black text-white">VIEW PRICE LIST</a>
+			</div>
 		<!-- MAIN -->
 		<main class="main">
 			<div class="banner">
@@ -55,7 +67,12 @@
 
 			<div class="gallery">
 				<div class="containerBig">
-					<div class="gallery-wrap">
+					<div class="link text-center">
+						<a href="#history" class="link text-blue" onclick="closeGallery()">
+							DISCOVER HISTORY <i class="fas fa-chevron-down"></i>
+						</a>
+					</div>
+					<div class="gallery-wrap" id="gallery-wrap">
 						<div class="gallery-grid">
 							<div class="box-img-s">
 								<img src="img/gallery1.png" title="" alt="">
@@ -80,7 +97,7 @@
 			</div>
 
 
-			<div class="intro text-center">
+			<div class="intro text-center" id="history">
 				<div class="containerSmall">
 					<h2 class="title">HISTORY</h2>
 					<div class="text">
@@ -91,7 +108,10 @@
 			</div>
 
 
-			<div class="block-text-img">	
+			<div class="link text-center">
+				<a href="#salon" class="link text-blue">DISCOVER SALON & ROKK STARS <i class="fas fa-chevron-down"></i></a>
+			</div>
+			<div class="block-text-img" id="salon">	
 				<div class="block-text oder2">
 					<div class="block-text-wrap">
 						<h2 class="title">SALON & ROKK STARS</h2>
@@ -99,6 +119,9 @@
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> 
 							<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
 						</div>
+						<div class="link">
+						<a href="#award" class="link text-blue">DISCOVER AWARDS <i class="fas fa-chevron-down"></i></a>
+					</div>
 					</div>
 				</div>
 				<div class="block-img oder1">
@@ -119,7 +142,7 @@
 			</div>
 
 			
-			<div class="block-text-img">
+			<div class="block-text-img" id="award">
 				<div class="block-img">
 					<div class="box-img-b">
 						<img src="img/award.png" title="" alt="">
@@ -131,14 +154,19 @@
 						<div class="text">
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
 						</div>
+						<div class="link">
+							<a href="#foundation" class="link text-blue">DISCOVER YOU ROKK FOUNDATION <i class="fas fa-chevron-down">
+							</i></a>
+						</div>	
 					</div>
 				</div>
 			</div>
 
-			<div class="block-text-img">	
+			<div class="block-text-img" id="foundation">	
 				<div class="block-text oder2">
 					<div class="block-text-wrap">
-						<h2 class="title">you rokk</h2>
+						<h2 class="title" style="text-transform: lowercase; font-size:2.8rem; font-weight: 100;">you rokk
+						</h2><span style="color: #BD6581; font-weight: 700;padding-left: 55px;letter-spacing: 3px;">FOUNDATION</span>
 						<div class="text">
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
 						</div>
@@ -231,10 +259,28 @@
 			</div>	
 		</footer>
 		<div class="btn-fixed bg-black text-center">
-			<a href="#" class="text-white" target="">FIND A SALON</a>
+			<div><a href="#" class="text-white" target="">FIND A SALON</a></div>
 		</div>		
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script type="text/javascript">
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+
+		// function closeGallery() {
+		//   var x = document.getElementById("gallery-wrap");
+		//   if (x.style.display === "none") {
+		//     x.style.display = "block";
+		//   } else {
+		//     x.style.display = "none";
+		//   }
+		// }
+	</script>
 </body>
 </html>
