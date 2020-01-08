@@ -164,18 +164,21 @@ ul.social-group li a:hover {
 .footer__menu {
     display: flex;
 }
-.footer__form {
-    width: 21%;
-    border: 1px solid white;
-    padding: 35px 20px;
-}
 h2.footer__title-form {
     font-size: 22px;
     letter-spacing: 1.2px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
+.yourokk {
+    font-size: 42px;
+    line-height: 1;
+}
+span.foundation {
+    color:#BD6581;
+    font-weight:bold; 
+    letter-spacing:4px;
+}
 .footer__copyright {
     padding-bottom: 20px;
 }
@@ -194,16 +197,20 @@ h2.footer__title-form {
     left: 0;
 }
 .footer__follow {
-    margin-bottom: 20px;
+    margin-bottom: 53px;
     clear: both;
 }
+
 /*RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE*/
 
 
 @media screen and (max-width: 767px) {
 
     li {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+    }    
+    .footer a {
+        font-size: 15px;
     }
     .containerBig, .containerSmall  {
         width: 100%;  
@@ -226,22 +233,34 @@ h2.footer__title-form {
     .header__mid img {
         width: 78%;
     }
-    .intro, .block-text {
+    .intro {
         padding: 61px 20px 51px;
+    }
+    .block-text {
+        padding: 25px 20px 56px;
+    }
+    .box-img {
+        margin-bottom: 2px;
+    }
+    .p1 {
+        margin-bottom: -8px;
+    }
+    .p2 {
+        padding-top: 10px;
     }
     p {
         text-align: left;
         margin: 0;
     }
     blockquote {
-        padding: 28px 50px 48px;
-        line-height: 1.27;
+        padding: 40px 50px 38px;
+        line-height: 1.26;
         text-transform: uppercase;
         font-size: 19px;
     }
     blockquote p {
-        margin: 20px 0 0;
-        font-size: 10px;
+        font-size: 14px;
+        padding-top: 30px;
     }
     h2.about {
         font-size: 25px;
@@ -278,7 +297,8 @@ h2.footer__title-form {
     }
     a.btn.bg-blue {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 5px;
     }
     .btn-group {
         padding-top: 20px;
@@ -298,7 +318,10 @@ h2.footer__title-form {
         padding-top: 4px;
     }
     span.foundation {
-        padding-left: 50%; 
+        padding-left: 40%; 
+    }
+    p.pyk {
+        padding-top: 10px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -362,6 +385,10 @@ h2.footer__title-form {
     span.foundation {
         padding-left: 15%;
     }
+    .containerFooter {
+        width: 75%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {    
@@ -420,13 +447,12 @@ h2.footer__title-form {
     }
     .footer__links {
         float: left;
-        margin-right: 30%;
-        margin-bottom: 30px;
+        margin-right: 16%;
+        margin-bottom: 50px;
     }
     .footer__top--wrap {
-        padding: 30px 0;
+        padding: 50px 0;
     }
-}
 
 @media screen and (min-width: 1024px) {
     span.menu {
@@ -535,15 +561,16 @@ h2.footer__title-form {
         padding-top: 33%;
         padding-left: 20%;
     }
+    h2.yourokk {
+        text-transform: lowercase;
+        font-size:55px; 
+        margin-bottom:0;
+    }
     .block-img {
         width: 68.5%;
     }
     .containerSmall {
         width: 50%;
-    }
-    .containerFooter {
-        width: 75%;
-        margin: auto;
     }
     .text p {
         font-size: 16px;
@@ -558,6 +585,11 @@ h2.footer__title-form {
         margin: 30px 0 0;
         font-size: 19px;
 
+    }
+    .footer__form {
+        width: 21%;
+        border: 1px solid white;
+        padding: 35px 20px;
     }
     .footer__copyright p {
         font-size: 14px;
