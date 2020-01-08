@@ -216,7 +216,7 @@ ul.social-group li a:hover {
         text-align: right;
     }
     .header__mid img {
-        width: 60%;
+        width: 78%;
     }
     .intro, .block-text {
         padding: 50px 20px;
@@ -236,13 +236,13 @@ ul.social-group li a:hover {
     }
     h2.about {
         font-size: 25px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         padding-top: 11px;
     }
     h2.title {
-        font-size: 25px;
+        font-size: 22px;
         letter-spacing: 0px;
-        line-height: 1;
+        line-height: 0;
         text-align: center;
     }
     .text p {
@@ -279,8 +279,9 @@ ul.social-group li a:hover {
         justify-content: space-between;
     }
     .box-img-s {
-        width: calc(50% - 5px);
-        margin-bottom: 10px;
+        width: calc(50% - 9px);
+        margin-bottom: 15px;
+        padding-top: 5px;
     }
     span.foundation {
         padding-left: 50%; 
