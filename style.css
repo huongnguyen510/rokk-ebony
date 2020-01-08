@@ -520,17 +520,17 @@ h2.footer__title-form {
         justify-content: center;
         align-items: center;*/
     }
-    #salon.block-text-wrap {
+    .salon-text {
         width: 65.5%;
         padding-top: 21%;
         padding-left: 20%;
     }
-    #award.block-text-wrap {
+    .award-text {
         width: 65.5%;
         padding-top: 25%;
         padding-left: 15%;
     }
-    #foundation.block-text-wrap {
+    .foundation-text {
         width: 65%;
         padding-top: 33%;
         padding-left: 20%;
@@ -552,7 +552,7 @@ h2.footer__title-form {
     }
     blockquote {
         font-size: 30px;
-        padding: 90px 0;
+        padding: 86px 0;
     }
     blockquote p {
         margin: 30px 0 0;
