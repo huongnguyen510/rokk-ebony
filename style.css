@@ -219,7 +219,7 @@ ul.social-group li a:hover {
         width: 78%;
     }
     .intro, .block-text {
-        padding: 50px 20px;
+        padding: 61px 20px;
     }
     p {
         text-align: left;
@@ -237,7 +237,6 @@ ul.social-group li a:hover {
     h2.about {
         font-size: 25px;
         margin-bottom: 8px;
-        padding-top: 11px;
     }
     h2.title {
         font-size: 22px;
@@ -280,8 +279,11 @@ ul.social-group li a:hover {
     }
     .box-img-s {
         width: calc(50% - 9px);
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         padding-top: 5px;
+    }
+    .box-img-b {
+        padding-top: 4px;
     }
     span.foundation {
         padding-left: 50%; 
