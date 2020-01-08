@@ -27,9 +27,6 @@ ul {
     padding-left: 0;
     margin: 0;
 }
-li {
-    margin-bottom: 10px;
-}
 img {
     width: 100%;
     height: 100%;
@@ -79,7 +76,7 @@ button {
     width: 32px;
     height: 20px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .menu-bars__row {
     display: block;
@@ -156,6 +153,7 @@ ul.social-group {
 }
 ul.social-group li {
     margin-right: 15px;
+    font-size: 25px;
 }
 ul.social-group li a:hover {
     color: #a8b7ca;
@@ -167,18 +165,26 @@ ul.social-group li a:hover {
     display: flex;
 }
 .footer__form {
+    width: 21%;
     border: 1px solid white;
-    padding: 20px;
+    padding: 35px 20px;
 }
+h2.footer__title-form {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .footer__copyright {
     padding-bottom: 20px;
 }
-.footer__top h2 {
+.footer__title {
     position: relative;
     padding-bottom: 12px;
     margin-bottom: 30px;
 }
-.footer__top h2:before {
+.footer__title:before {
     position: absolute;
     content: "";
     width: 25px;
@@ -191,12 +197,14 @@ ul.social-group li a:hover {
     margin-bottom: 20px;
     clear: both;
 }
-
-
 /*RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE*/
 
 
 @media screen and (max-width: 767px) {
+
+    li {
+        margin-bottom: 10px;
+    }
     .containerBig, .containerSmall  {
         width: 100%;  
     }
@@ -346,7 +354,7 @@ ul.social-group li a:hover {
     }
     .btn-group div {
         display: inline-flex;
-        padding: 14px 31px 0 0;
+        padding: 8px 30px 0 0;
     }
     .btn.bg-blue {
         padding: 12px 28px;
@@ -407,7 +415,7 @@ ul.social-group li a:hover {
     .footer {
         font-size: 0.825rem;
     }
-    .footer__top h2 {
+    .footer__title {
         font-size: 0.9rem;
     }
     .footer__links {
@@ -423,8 +431,9 @@ ul.social-group li a:hover {
 @media screen and (min-width: 1024px) {
     span.menu {
         font-size: 15px;
+        color: black;
     }    
-    .footer__top h2 {
+    .footer__title {
         font-size: 1rem;
     }
     .footer__top--wrap {
@@ -485,18 +494,46 @@ ul.social-group li a:hover {
 }
 
 @media screen and (min-width: 1920px) {
+
+    li {
+        margin-bottom: 13px;
+    }
+    .header {
+        height: 89px;
+    }
+    .menu-bars__wrap {
+        height: 15px;
+    }
+    .footer {
+        margin-top: 19px;
+    }
+    .footer__top--wrap {
+        padding: 70px 0 45px;
+    }
     .block-text-img {
         display: flex;
         border: 1px solid #eee;
     }
     .block-text {
         width: 31.5%;
-        display: flex;
+        /*display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
     }
-    .block-text-wrap {
+    #salon.block-text-wrap {
+        width: 65.5%;
+        padding-top: 21%;
+        padding-left: 20%;
+    }
+    #award.block-text-wrap {
+        width: 65.5%;
+        padding-top: 25%;
+        padding-left: 15%;
+    }
+    #foundation.block-text-wrap {
         width: 65%;
+        padding-top: 33%;
+        padding-left: 20%;
     }
     .block-img {
         width: 68.5%;
@@ -511,6 +548,7 @@ ul.social-group li a:hover {
     .text p {
         font-size: 16px;
         line-height: 1.5;
+        padding-top: 3px;
     }
     blockquote {
         font-size: 30px;
@@ -565,6 +603,6 @@ ul.social-group li a:hover {
     position: fixed;
     transform: rotate(-90deg);
     z-index: 1;
-    right: -140px;
+    right: -130px;
     top: 540px;
 }
